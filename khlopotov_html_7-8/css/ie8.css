@@ -1,0 +1,48 @@
+.logo__svg {
+	display: none;
+}
+
+.logo__png {
+	display: block;
+}
+
+.content__radiobutton {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(border-radius.htc);
+}
+
+.content__radiobutton-active {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(border-radius.htc);
+	background-color: #fff;
+}
+
+.background_under-iphone .content__radiobutton {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(border-radius.htc);
+}
+
+.background_under-iphone .content__radiobutton-active {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(border-radius.htc);
+	border-color: #696969;
+	background-color: #696969;
+	background-color: rgba(0, 0, 0, 0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#00000000')"; /* IE */
+}
+
+.purple {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#745083', endColorstr='#322539',GradientType=0);"
+}
+
+.background_under-iphone .radiobutton_status-active .content__radiobutton-active {
+	background: #dedede;
+}

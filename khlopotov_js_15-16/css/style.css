@@ -1,0 +1,72 @@
+.header {
+	height: 85px;
+	background: #fafafa;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.header__search-form {
+	display: inline-block;
+	line-height: 85px;
+}
+
+.header__title {
+	display: inline-block;
+	margin: 0 20px;
+	color: #f00;
+	font-family: Verdana;
+	font-size: 36px;
+}
+
+.header__search-field {
+	display: inline-block;
+	width: 511px;
+	height: 34px;
+	margin: 25px 20px 0;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 34px;
+	vertical-align: top;
+}
+
+.header__search-button {
+	margin-top: 25px;
+	height: 36px;
+	vertical-align: top;
+}
+
+.wrapper {
+	width: 500px;
+	margin-left: 230px;
+	overflow: auto;
+}
+
+.content {
+	overflow: auto;
+}
+
+.content__article {
+	margin-top: 25px;
+}
+
+.content__post-title {
+	display: block;
+	width: 500px;
+	height: 21px;
+	overflow: hidden;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+}
+
+.content__post-url {
+	color: #006621;
+}
+
+.content__posts-text {
+	height: 54px;
+	overflow: hidden;
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 18px;
+}

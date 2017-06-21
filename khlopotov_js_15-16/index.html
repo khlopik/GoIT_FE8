@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>webhose.io search</title>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <form action="" class="header__search-form">
+                <h1 class="header__title">webhose.io</h1>
+                <input type="text" name="search-query" class="header__search-field">
+                <button type="submit" class="header__search-button">Отправить</button>
+            </form>
+        </header>
+        <div class="wrapper">
+        <script type="text/template" id="generate-result">
+            <% for (var i = 0; i < data.posts.length; i++) { %>
+                <article class="content__article">
+                    <a href=<%= data.posts[i].url%> class="content__post-title"><%= data.posts[i].title.length===0 ? 'Post without title' : data.posts[i].title%></a>
+                    <% tempElement = document.createElement ('a'); %>
+                    <% tempElement.href = data.posts[i].url %>
+                    <span class="content__post-url"><%= tempElement.hostname %></span>
+                    <p class="content__posts-text"><%= data.posts[i].text%></p>
+                </article>
+            <% }; %>
+      </script>
+      </div> 
+    </body>
+</html>

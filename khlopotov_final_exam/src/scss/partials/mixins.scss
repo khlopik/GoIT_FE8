@@ -1,0 +1,20 @@
+@mixin old-ie {
+    @if $old-ie {
+        @content;
+    }
+}
+
+@mixin apply-to($ltgt, $device) {
+    $extrema: null;
+    @if $ltgt == less-than {
+        $extrema: max;
+    }
+
+    @if $ltgt == greater-than {
+        $extrema: min
+    }
+
+    @media screen and (#{$extrema}-width: $device) {
+        @content;
+    }
+}

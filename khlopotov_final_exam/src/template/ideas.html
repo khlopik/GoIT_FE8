@@ -1,0 +1,25 @@
+<div class="ideas">
+	<div class="wrapper">
+		<h2 class="ideas__title">Discover holiday activity ideas</h2>
+			<script type="text/template" id="grid-item">
+				<% var wide = '';%>
+				<% var noMargin = '';%>
+				<% for (var i = 0; i < data.length; i++) { %>
+					<%wide = (i === 4) || (i == 5) ? ' ideas__wide' : '';%>
+					<%noMargin = (i === 0) || (i == 3) || (i==5) ? ' ideas_no-left-margin' : (i === 2) || (i === 4) || (i === 6) ? ' ideas_no-right-margin' : '';%>
+					<div class="ideas__grid-item<%=wide%><%=noMargin%>">
+						<img class="ideas__idea-photo" src=<%= data[i].imageLink%>>
+						<div class="ideas__title-block">
+							<h3 class="ideas__idea-title"><%= data[i].imageName%></h3>
+						</div>
+					</div>
+					<% }; %>
+			</script>
+		<h2 class="ideas__title-bottom">Discover holiday activity ideas</h2>
+		<p class="ideas__question-interest">Hi! What are your holiday interests?</p>
+		<form class="ideas__search-interest">
+			<input type="text" class="ideas__search-query" placeholder="Enter your interests">
+			<button class="ideas__search-partners">Search partners</button>
+		</form>
+	</div>
+</div>
